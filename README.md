@@ -8,7 +8,7 @@
 
 <br>
 
-- ![Navbar](images\learning.jpg)
+- ![Learning](images/learning.jpg)
 
 ### Installation 
 
