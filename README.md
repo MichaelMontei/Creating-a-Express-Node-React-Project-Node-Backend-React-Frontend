@@ -1,5 +1,11 @@
 # Creating-a-Express-Node-React-Project-Node-Backend-React-Frontend
 
+### Learning Objective
+- Create a Back-end with Node.js and Express
+- Make API endpoints in the back-end 
+- Fetch all this data in the front-end with React and display the data
+- After this we will make our own exercise with a database and CRUD in the back-end.
+
 ### Installation 
 
 After making a new project in your github, make two folders in your project 
