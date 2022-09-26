@@ -1,5 +1,8 @@
 # Creating-a-Express-Node-React-Project-Node-Backend-React-Frontend
 
+
+![Navbar]([meme/src/components/images/Navbar.JPG](https://i.imgflip.com/2cabvp.jpg))
+
 ### Learning Objective
 - Create a Back-end with Node.js and Express
 - Make API endpoints in the back-end 
