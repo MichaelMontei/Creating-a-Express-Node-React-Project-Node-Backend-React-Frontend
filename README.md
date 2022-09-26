@@ -89,3 +89,9 @@ connection.connect(function(err) {
     });
 });
 ```
+
+- Here you can see the test we performed: 
+<br>
+- ![test](images/test.JPG)
+
+### Third mission: Displaying this information in the Front-End. 
