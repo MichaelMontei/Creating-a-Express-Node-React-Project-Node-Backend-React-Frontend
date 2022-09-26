@@ -3,7 +3,8 @@ import './App.css';
 
 function App() {
 
-  const [backendData, setBackendData] = useState([{}])
+    const [backendData, setBackendData] = useState([{}])
+    const [name, setName] = useState("");
 
   useEffect(() => {
     fetch("/api")
@@ -13,6 +14,18 @@ function App() {
         }
       )
   }, [])
+
+    useEffect(() => {
+        fetch("/name")
+            .then(response => response.json())
+            .then(data => {
+                    setName(data)
+                console.log(data);
+                }
+            )
+    },)
+
+
 
   return (
     <div>
