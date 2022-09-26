@@ -1,13 +1,14 @@
-# Creating-a-Express-Node-React-Project-Node-Backend-React-Frontend
-
-
-![Navbar]([meme/src/components/images/Navbar.JPG](https://i.imgflip.com/2cabvp.jpg))
+# Creating a Back-end Node.js/Express and front React Project!
 
 ### Learning Objective
 - Create a Back-end with Node.js and Express
 - Make API endpoints in the back-end 
 - Fetch all this data in the front-end with React and display the data
 - After this we will make our own exercise with a database and CRUD in the back-end.
+
+<br>
+
+- ![Navbar](images\learning.jpg)
 
 ### Installation 
 
