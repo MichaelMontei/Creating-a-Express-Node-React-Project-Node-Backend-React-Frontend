@@ -1,14 +1,23 @@
 const pool = require("../helpers/database");
-class User {
-    constructor(){
-        this.pool = pool;
-    }
+const db = require ("../helpers/database");
 
-    async getAllNames() {
-        const test = "SELECT * FROM user";
-        return this.pool.query(test);
-    }
+let helper;
+helper.emptyOrRows = function (rows) {
+    return undefined;
 }
 
-const user = new User();
-module.exports = user;
+async function getAllNames() {
+    const rows = await db.query(`SELECT * FROM user`);
+    const data = helper.emptyOrRows(rows);
+    const result = data.rows;
+
+    return {
+        result
+    };
+}
+
+module.exports = {
+    getAllNames,
+
+};
+

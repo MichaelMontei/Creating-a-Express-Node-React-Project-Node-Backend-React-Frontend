@@ -1,7 +1,7 @@
-
-
-
+const dotenv = require("dotenv");
 let mysql = require('mysql');
+const { Pool } = require("pg");
+const {query} = require("express");
 let connection = mysql.createConnection({
     host     : process.env.DB_HOST,
     user     : process.env.DB_USER,
@@ -9,6 +9,13 @@ let connection = mysql.createConnection({
     database : process.env.DB_NAME
 
 });
+
+function emptyOrRows(rows) {
+    if (!rows) {
+        return [];
+    }
+    return rows;
+}
 
 // connection.connect(function(err) {
 //     if (err) {
@@ -26,3 +33,9 @@ connection.connect(function(err) {
         console.log(result);
     });
 });
+
+module.exports = {
+    query: (text, params, callback) => {
+        return query(text, params, callback);
+    },
+};
